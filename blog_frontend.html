@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>My blog about IT</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Rubik+Glitch+Pop&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="icon/favicon1.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media_size.css">
+  <link rel="javascript" type="text/javascript" href="js/script.js">
+</head>
+
+<body>
+  <nav class="menu">
+    <div class="home-page">
+      <a href="index.html">Home</a>
+    </div>
+    <div class="menu-item">
+      <a href="blog_macos.html">Mac OS{мой опыт, проблемы, интерсные программы, настройки и
+        т.д.}</a>
+    </div>
+    <div class="menu-item">
+      <a href="blog_frontend.html">Frontend{обучение, портфолио и
+        т.д.}</a>
+    </div>
+    <div class="menu-item">
+      <a href="blog_neovim.html">Neovim{мой опыт, плагины, настройки и т.д.}</a>
+    </div>
+
+  </nav>
+
+  <main>
+    <h1>Frontend - все о веб разработки HTML, CSS, JS фреймворки и прочие</h1>
+    <article>
+
+      <date format="DD mm YYYY">20 декабря 2024</date><time format="HH:mm"> 13:55</time>
+      <h3> Тема: Изучение HTML</h3>
+      <p>Изучил теги для адaптивных изображений.</p>
+      <p>Тег &lt;img&gt; с парметрами srcset и sizes выбирает изображения исходя из разрешения view port сайта на экране
+        устройства. Если нет подходящего, то берется изображение из параметра src.
+      <section class="code_html">
+        <pre>
+          <code>
+            &lt;img
+            srcset="file_name1 001w, file_name2 002w, ..."
+            sizes="(max-widht/min-width: 001px) 001px,
+            (max-widht/min-width: 002px) 002px,
+            ..., 00npx"
+            src="file_name"
+            alt=""&gt;
+          </code>
+        </pre>
+      </section>
+
+
+
+      <p> Тег &lt;picture&gt; - вместо &lt;img&gt; умеет выбирать изображение исходя из разрешения view port сайта на
+        экране устройства.</p>
+      <section class="code_html">
+        <pre>
+          <code>
+            &lt;picture&gt;
+            &lt;source srcset="file_name1" media="(max-widht/min-width: 001px)"&gt;
+            &lt;source srcset="file_name2" media="(max-widht/min-width: 002px)"&gt;
+            ...
+            &lt;source srcset="file_name" media="(max-widht/min-width: 00npx)"&gt;
+            &lt;img src="file_name" alt=""&gt;
+            &lt;/picture&gt;
+          </code>
+        </pre>
+      </section>
+
+    </article>
+  </main>
+  <footer>
+    <p>&copy;Авторское право: Marat Gainutdinov</p>
+  </footer>
+</body>
+
+</html>

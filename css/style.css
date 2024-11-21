@@ -1,1 +1,264 @@
- ./js/script.js
+.doto-100 {
+  font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "ROND" 0;
+}
+
+.doto-200 {
+  font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "ROND" 0;
+}
+
+body {
+  /*width: 90%;*/
+  margin: 0 auto;
+  font:
+    1.2em/1.2 Arial,
+    Helvetica,
+    sans-serif;
+  /*font-family: JetBrains Mono, monospace;*/
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgba(200, 200, 200, 0.255555);
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+footer {
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgba(200, 200, 120, 0.455555);
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+nav {
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgba(100, 200, 200, 0.255555);
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+h2,
+h3 {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
+
+.menu {
+  width: 80%;
+  /*max-width: 80wv;*/
+  margin-left: auto;
+  margin-right: auto;
+  font-family: JetBrains Mono, monospace;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /*justify-content: space-between;*/
+  justify-content: center;
+  /*align-items: center;*/
+  /*background-color: rgba(218, 202, 219, 0.5);*/
+  /*background-color: rgba(179, 85, 127, 0.5);*/
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+}
+
+.menu a:hover {
+  text-shadow: 1px 1px rgba(0, 0, 0, .355555);
+  /*color: #fff;*/
+}
+
+a:link {
+  text-decoration: none;
+  color: #00f;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #5af;
+}
+
+.menu a {
+  color: #000;
+  font-family: JetBrains Mono, monospace;
+  font-size: 1.0em;
+}
+
+.home-page {
+  /*float: left;*/
+  flex: 1;
+  margin-right: 10px;
+  color: #fff;
+  box-shadow: 0 0 5px #fff;
+  background-color: rgba(170, 8, 127, 0.5);
+  background: rgba(200, 200, 200, 0.255555);
+  border-radius: 5px;
+  border-left: 2px #fff;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1em;
+}
+
+.menu-item {
+  /*float:   left;*/
+  flex: 3;
+  margin-right: 10px;
+  color: #fff;
+  box-shadow: 0 0 5px #fff;
+  /*background-color: rgba(170, 18, 200, 0.5);*/
+  border-radius: 5px;
+  border-left: 2px #fff;
+  text-align: center;
+  font-size: 0.8em;
+  /*height: 60wh;*/
+  padding: 10px 0px 10px 0px;
+}
+
+.menu-last {
+  display: flow-root;
+}
+
+.special {
+  background-color: rgb(79, 185, 227);
+  padding: 10px;
+  color: #fff;
+}
+
+.wrapper {
+  background-color: rgb(79, 185, 227);
+  padding: 10px;
+  color: #fff;
+  /*Добавляет обтекания блока дыже если он меньше контейнера, но возможно побочные эффекты*/
+  /*overflow: auto;*/
+  /*Добавляет обтекание блока даже если он больше контейнера, без побочных эффектов. Современный метод*/
+  display: flow-root;
+}
+
+
+
+.image {
+  margin-bottom: 20px;
+  flex: 32%;
+  /*padding: 1em;*/
+
+}
+
+/*Данный класс выделяет блок кода с черным фоном, белым текстом и скроллом по оси X. Также он задает специальный шрифт */
+.code_html {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgb(255, 255, 255);
+  width: 80%;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 5px;
+  font-family: JetBrains Mono, monospace;
+  font-size: 0.8em;
+  overflow-x: scroll;
+}
+
+/*code {*/
+/*  overflow-x: scroll;*/
+/*  white-space: pre-wrap;*/
+/*  /*white-space: pre-line;*/
+*/
+/*}*/
+
+@media screen and (max-width: 800px) {
+  .flex-box {
+    flex-direction: column;
+  }
+
+  .code_html {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(255, 255, 255);
+    width: 80%;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 5px;
+    font-family: JetBrains Mono, monospace;
+    font-size: 0.7em;
+    overflow-x: scroll;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .flex-box {
+    flex-direction: column;
+  }
+
+  .menu-item {
+    background-color: rgba(118, 202, 219, 0.5);
+    color: #eef;
+    border-radius: 5px;
+    font-size: 0.8em;
+    padding: 5px 0px 5px 0px;
+  }
+
+  .menu-item a {
+    color: #fff;
+    font-family: JetBrains Mono, monospace;
+    font-size: 0.6em;
+  }
+
+  .code_html {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(255, 255, 255);
+    width: 300px;
+    padding: 5px;
+    margin: 0 auto;
+    border-radius: 5px;
+    font-family: JetBrains Mono, monospace;
+    font-size: 0.6em;
+    overflow-x: scroll;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .flex-box {
+    flex-direction: column;
+  }
+
+  .menu a {
+    color: #fff;
+    font-family: JetBrains Mono, monospace;
+    font-size: 0.4em;
+  }
+
+  .code_html {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(255, 255, 255);
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 5px;
+    font-family: JetBrains Mono, monospace;
+    font-size: 0.4em;
+    overflow-x: scroll;
+  }
+}
